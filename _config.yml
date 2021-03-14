@@ -24,7 +24,7 @@ search: true
 
 # Build settings
 markdown: kramdown
-og_image: /assets/images/photo-jer-mila_small.jpg
+og_image: /assets/images/photo-jer-mila_sqaure.jpg
 # theme: minimal-mistakes-jekyll
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
