@@ -24,6 +24,7 @@ search: true
 
 # Build settings
 markdown: kramdown
+og_image: /assets/images/photo-jer-mila_small.jpg
 # theme: minimal-mistakes-jekyll
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
@@ -61,6 +62,14 @@ analytics:
   google:
     tracking_id: "UA-56795647-2"
     anonymize_ip: false # default
+
+# Include social profile in search results
+social:
+  type:  # Person or Organization (defaults to Person)
+  name:  # If the user or organization name differs from the site's name
+  links:
+    - "https://twitter.com/jerpint"
+    - "https://www.linkedin.com/in/jeremy-pinto"
 
 comments:
   provider: "disqus"
