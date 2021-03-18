@@ -1,5 +1,5 @@
 ---
-title: "Convolutional Neural Net Cheat Sheet"
+title: "Convolutional Neural Networks Cheat Sheet"
 date: 2021-03-18T00:00:00-05:00
 excerpt: "A collection of animations explaining operations in convolutional neural networks"
 categories:
