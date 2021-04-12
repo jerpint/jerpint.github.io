@@ -7,6 +7,7 @@ categories:
 tags:
   - python
   - pytorch
+  - neural-network
   - colab
 classes: wide
 header:
