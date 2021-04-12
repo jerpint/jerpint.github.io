@@ -14,10 +14,11 @@ header:
 ---
 
 <a href='https://colab.research.google.com/drive/1ODzFT8u4PyXFqRdgYkrICfNM2xY6F2El?usp=sharing'>
-<button type='button'>&nbsp;Check it out on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;View the code on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
-In this post, we are going to explore how to "reverse" a neural network. 
+In this post, we are going to explore how to "reverse" a neural network - also known as [feature visualization](https://distill.pub/2017/feature-visualization/). 
+
 The traditional way to train a neural network is to optimize the weights to achieve a task:
 
 ![reverse_nnet1](https://user-images.githubusercontent.com/18450628/114316243-bbd36300-9ad0-11eb-9251-d1637221e4c0.png)
@@ -50,8 +51,8 @@ There is a lot of really nice work on the subject, far more advanced than what I
 [Here](https://distill.pub/2017/feature-visualization/) is an excellent in-depth intro to the subject that goes much further than this post.
 More recently, it was used to [study multi-modal inputs in DALL-E](https://openai.com/blog/multimodal-neurons/).
 
-I made all the code available on colab, so you can try looking for weird creatures yourself!
+I made [all the code available](https://colab.research.google.com/drive/1ODzFT8u4PyXFqRdgYkrICfNM2xY6F2El?usp=sharing), so you can try looking for weird creatures yourself!
 
 <a href='https://colab.research.google.com/drive/1ODzFT8u4PyXFqRdgYkrICfNM2xY6F2El?usp=sharing'>
-<button type='button'>&nbsp;Check it out on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;View the code on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
