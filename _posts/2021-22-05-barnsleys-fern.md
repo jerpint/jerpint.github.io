@@ -1,5 +1,5 @@
 ---
-title: "Barnley's Fern"
+title: "Barnsley's Fern"
 date: 2021-05-22T00:00:00-05:00
 excerpt: "Constructing Barnley's Fern using python"
 categories:
@@ -12,7 +12,7 @@ header:
   - image: "/assets/images/photo-jer-mila_square.jpg"
 ---
 
-# Barnley's Fern
+# Barnsley's Fern
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/dev/colabs/Barnley's_Fern.ipynb">
 <button type='button'>&nbsp;Check it out on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
