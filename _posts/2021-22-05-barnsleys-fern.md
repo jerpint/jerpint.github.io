@@ -9,7 +9,7 @@ tags:
   - colab
 classes: wide
 header:
-  - og_image: "/assets/images/barnsley_fern.png"
+  og_image: /assets/images/barnsley_fern.png
 ---
 
 # Barnsley's Fern
