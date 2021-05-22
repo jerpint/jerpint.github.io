@@ -14,7 +14,7 @@ header:
 
 # Barnsley's Fern
 
-<a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/dev/colabs/Barnley's_Fern.ipynb">
+<a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/Barnley's_Fern.ipynb">
 <button type='button'>&nbsp;Check it out on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
@@ -96,6 +96,6 @@ plt.axis("off")
 
 That's it! All the code to reproduce this is on Colab:
 
-<a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/dev/colabs/Barnley's_Fern.ipynb">
+<a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/Barnley's_Fern.ipynb">
 <button type='button'>&nbsp;Check it out on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
