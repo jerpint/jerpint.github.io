@@ -9,7 +9,7 @@ tags:
   - colab
 classes: wide
 header:
-  - image: "/assets/images/photo-jer-mila_square.jpg"
+  - image: "/assets/images/barnsley_fern.png"
 ---
 
 # Barnsley's Fern
