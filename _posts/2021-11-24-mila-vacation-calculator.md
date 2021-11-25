@@ -76,7 +76,7 @@ function getVacationDays() {
 ## How it works
 
 It counts how many months you've accumulated since the last update on Folks and adds that to your vacation total. 
-A month is only counted once it is completed, so for a given day of a month, the total doesn't change. This is the official Mila way of counting.
+A month is only counted once it is completed, so for a given day of a month, the total doesn't change. This is the unofficial Mila way of counting.
 
 The final count is then obtained by:
 
