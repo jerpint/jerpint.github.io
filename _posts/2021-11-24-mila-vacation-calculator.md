@@ -26,12 +26,27 @@ You can also forecast how much vacation you'll have accumulated on a future date
 <html>
 <body>
 Available days in Folks: <input type="number" step="any" min="-100" max="100" value="0" id="cumulatedDays">
+<p></p>
+<p></p>
+
 Vacation days per year: <input type="number" step="any" min="0" max="100" value="0" id="yearlyVacationDays">
+<p></p>
+<p></p>
+
 <label for="date">Day on which you will go on vacation</label>
-<duet-date-picker identifier="date"></duet-date-picker>
-<div id = "vacation"></div>
+<duet-date-picker identifier="vacation-date"></duet-date-picker>
+
+<p></p>
+<p></p>
+
+<label for="start-date">Start Date (For new employees only - optional)</label>
+<duet-date-picker identifier="start-date"></duet-date-picker>
+
+<p></p>
+<p></p>
 
 <button onclick="getVacationDays()">Calculate!</button>
+<div id = "vacation"></div>
 
 <script>
 function getVacationDays() {
@@ -39,16 +54,15 @@ function getVacationDays() {
   var current_date = new Date();
   var currentMonth = Number(current_date.getMonth()) + 1 // months are indexed 0-11 in js, +1 to avoid confusion.
   var currentYear = Number(current_date.getYear()) - 100 + 2000 // current year in 20XX format
-
-  var picker = document.querySelector("duet-date-picker")
-  if (picker.value === "") {
+  var vacationDate = document.querySelector("duet-date-picker[identifier='vacation-date']")
+  if (vacationDate.value === "") {
       // if no value selected, get the current date instead
-      var selectedMonth = currentMonth // current month
-      var selectedYear = currentYear // current year
+      var vacationMonth = currentMonth // current month
+      var vacationYear = currentYear // current year
 
   } else {
-      var selectedMonth = Number(picker.value.split('-')[1])
-      var selectedYear = Number(picker.value.split('-')[0])
+      var vacationMonth = Number(vacationDate.value.split('-')[1])
+      var vacationYear = Number(vacationDate.value.split('-')[0])
   }
 
   // get the date of the last tally in folks (usually the last May 1st)
@@ -58,12 +72,25 @@ function getVacationDays() {
   } else {
       var folksYear = currentYear
   }
+
+  // Check if a start date was specified and correct for it
+  var startDate = document.querySelector("duet-date-picker[identifier='start-date']")
+  if (startDate.value != "") {
+      var startMonth = Number(startDate.value.split('-')[1])
+      var startYear = Number(startDate.value.split('-')[0])
+      var startOffset =  startMonth + startYear * 12 - folksMonth - folksYear*12
+      if (startOffset < 0) {
+          startOffset = 0  // start date was before last folks tally so ignore it
+      }
+  } else {
+      var startOffset = 0 // no offset to begin with
+  }
   
 
   var daysperYear = Number(document.getElementById("yearlyVacationDays").value) // Days worked of the current month
   var cumulatedDays = Number(document.getElementById("cumulatedDays").value)
   var daysPerMonth = (daysperYear / 12) // number of vacation days you bank per month
-  var monthsElapsed = selectedYear * 12 + selectedMonth - folksYear * 12 - folksMonth 
+  var monthsElapsed = vacationYear * 12 + vacationMonth - folksYear * 12 - folksMonth - startOffset
   var result = cumulatedDays + monthsElapsed * daysPerMonth
   document.getElementById("vacation").innerHTML = "Accumulated Vacation Days: " + result.toPrecision(3)
   document.getElementById("vacation").style.visibility='visible'
