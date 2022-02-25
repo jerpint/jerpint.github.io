@@ -1,7 +1,7 @@
-let width = 600;
-let height = 600;
+let width = 640;
+let height = 640;
 let circleX = width / 2;
-let circleY = height / 2 - 30;
+let circleY = height / 2;
 let radius = width / 2.5;
 
 
@@ -21,21 +21,26 @@ let colors = [
 
 function setup() {
   canv = createCanvas(width, height).parent(sketchHolder);
-
-  sliderModulus = createSlider(2, 300, 111);
-  sliderMultiplier = createSlider(1, 100, 2);
-
-  // sliderModulus.position(0, 110);
-  sliderModulus.parent("sketchHolder");
-  sliderModulus.position(0, height + 100, 'absolute');
-  // SliderModulus.position(sliderModulus.x * 2 + sliderModulus.width + 10, 25)
-  sliderModulus.style("width", "200px");
-  //
-  sliderMultiplier.parent("sketchHolder");
-  sliderMultiplier.position(0, height+120, 'absolute');
-  sliderMultiplier.style("width", "200px");
-
 }
+
+
+function getModulus() {
+    return document.getElementById('modulus-text').value;
+}
+function getMultiplier() {
+    return document.getElementById('multiplier-text').value;
+}
+
+function updateModulus(val) {
+    document.getElementById('modulus-slider').value = val;
+    document.getElementById('modulus-text').value = val;
+}
+
+function updateMultiplier(val) {
+    document.getElementById('multiplier-slider').value = val;
+    document.getElementById('multiplier-text').value = val;
+}
+
 
 function duplicateExists(arr) {
   return new Set(arr).size !== arr.length;
@@ -54,8 +59,8 @@ function getPath(multiplier, modulus, start) {
 }
 
 function drawPath(path, color) {
-  let modulus = sliderModulus.value();
-  let multiplier = sliderMultiplier.value();
+  let modulus = getModulus()
+  let multiplier = getMultiplier()
 
   for (let i = 0; i < path.length - 1; i++) {
     angle0 = (path[i] * 2 * Math.PI) / modulus + Math.PI;
@@ -75,21 +80,10 @@ function drawPath(path, color) {
 }
 function draw() {
   background(220);
-  let modulus = sliderModulus.value();
-  let multiplier = sliderMultiplier.value();
+  let modulus = getModulus()
+  let multiplier = getMultiplier()
  
   stroke("white");
-
-  text(
-    "Modulus: " + sliderModulus.value(),
-    sliderModulus.x * 2 + sliderModulus.width + 10,
-    height - 40 
-  );
-  text(
-    "Multiplier: " + sliderMultiplier.value(),
-    sliderMultiplier.x * 2 + sliderMultiplier.width + 10,
-    height - 10
-  );
 
   // Draw the circle and evenly spaced dots
   circle(circleX, circleY, radius * 2);
