@@ -60,7 +60,7 @@ plugins:
 analytics:
   provider: "google-gtag"
   google:
-    tracking_id: "UA-56795647-2"
+    tracking_id: "G-S5S7SSW6HB"
     anonymize_ip: false # default
 
 # Include social profile in search results
