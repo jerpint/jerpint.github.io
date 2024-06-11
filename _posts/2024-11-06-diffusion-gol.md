@@ -9,7 +9,7 @@ tags:
   - colab
   - pytorch
 header:
-  og_image: /assets/images/gol_snapshot.png
+  og_image: /assets/images/gol_snapshot.jpg
 ---
 
 ## TL;DR
