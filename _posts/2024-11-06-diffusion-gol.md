@@ -14,9 +14,36 @@ header:
 
 ## TL;DR
 
-In this post, we we will be using Stable Diffusion to animate the famous [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
+In this post, we we will be using Stable Diffusion to animate the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
-![image](../../assets/images/gol_resize.gif)
+
+<div style="display: flex; justify-content: space-between;">
+  <figure style="margin: 0 10px;">
+    <img src="../../assets/images/gol_resize.gif" alt="Image 1" style="width: 100%;"/>
+    <figcaption style="text-align: center;">Air</figcaption>
+  </figure>
+  <figure style="margin: 0 10px;">
+    <img src="../../assets/images/gol_resize_2.gif" alt="Image 2" style="width: 100%;"/>
+    <figcaption style="text-align: center;">Water</figcaption>
+  </figure>
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <figure style="margin: 0 10px;">
+    <img src="../../assets/images/gol_resize_3.gif" alt="Image 3" style="width: 100%;"/>
+    <figcaption style="text-align: center;">Fire</figcaption>
+  </figure>
+  <figure style="margin: 0 10px;">
+    <img src="../../assets/images/gol_resize_4.gif" alt="Image 4" style="width: 100%;"/>
+    <figcaption style="text-align: center;">Earth</figcaption>
+  </figure>
+</div>
+
+
+<!-- <div style="display: flex;">
+  <img src="../../assets/images/gol_resize.gif" alt="Image 1" style="width: 50%;"/>
+  <img src="../../assets/images/gol_resize_2.gif" alt="Image 2" style="width: 50%;"/>
+</div> -->
 
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/gol_diffusion.ipynb">
@@ -59,17 +86,21 @@ We pretty much just need to generate a control image from each game of life stat
 Now we can iterate on each cell of the game, and for each one generate an image. Note that there is nothing guaranteeing temporal consistency, we are just hoping for the best by controlling the seeds. Here is the overall pseudo-code that we then need to implement:
 
 ```python
-controlnet = ControlNet()  # Load the model
-grids = GameOfLife.generate_grids()  # Playout the game of life
-source_image = load_image(IMAGE_URL)  # Load a source image
-frames = []  # Collect all frames here
+# Pseudo-code for generating a gif
 
-for grid in grids:
-    # generate a frame
-    frame = controlnet.generate(source_image=source_image, control_image=grid, **controlnet_kwargs)
+controlnet = ControlNet()  # Load the model
+game_of_life = GameOfLife(seed=42)  # Initialize the game of life
+source_image = load_image(IMAGE_URL)  # Load a source image (e.g. a volcano)
+num_steps = 50  # Number of steps to iterate through the game
+frames = []  # Collect all generated frames here
+
+for step in range(num_steps):
+    game_of_life.step()  # Play a step in the game of life
+    grid_image = game_of_life.grids[-1].to_image()  # Generate an image from the latest grid
+    frame = controlnet.generate(source_image=source_image, control_image=grid_image, **controlnet_kwargs)  # Generate the controlnet frame
     frames.append(frame)
 
-display_gif(frames)
+render_gif(frames)
 ```
 
 We can start with plenty of different types of images, for example, here is one with the famous "Tsunami by hokusai" theme:
