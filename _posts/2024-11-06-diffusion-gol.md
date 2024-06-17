@@ -1,6 +1,6 @@
 ---
-title: "Stable Diffusion 🤝 Game of Life"
-date: 2024-06-11T00:00:00-05:00
+title: "ControlNet Game of Life"
+date: 2024-06-16T00:00:00-05:00
 excerpt: "How to use stable diffusion to animate the game of life."
 categories:
   - blog
@@ -14,7 +14,7 @@ header:
 
 ## TL;DR
 
-In this post, we we will be using Stable Diffusion to animate the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
+In this post, we we will be using [ControlNet](https://huggingface.co/docs/diffusers/en/using-diffusers/controlnet) to animate the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
 
 <div style="display: flex; justify-content: space-between;">
@@ -40,15 +40,27 @@ In this post, we we will be using Stable Diffusion to animate the [Game of Life]
 </div>
 
 
-<!-- <div style="display: flex;">
-  <img src="../../assets/images/gol_resize.gif" alt="Image 1" style="width: 50%;"/>
-  <img src="../../assets/images/gol_resize_2.gif" alt="Image 2" style="width: 50%;"/>
-</div> -->
 
+# Try it yourself
+
+> Skip to the next section to get to the explanation of how it works.
+
+You can try running it on the [HuggingFace 🤗 space](https://huggingface.co/spaces/jerpint/game-of-life-controlnet), or on the [Colab link](https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/gol_diffusion.ipynb).
+They both have GPU usage limits, so you can play around with both and see what works for you.
+
+
+<iframe
+	src="https://jerpint-game-of-life-controlnet.hf.space"
+	frameborder="0"
+	width="850"
+	height="450"
+></iframe>
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/gol_diffusion.ipynb">
 <button type='button'>&nbsp;Check it out on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
+
+
 
 # How it works
 
@@ -106,11 +118,3 @@ render_gif(frames)
 We can start with plenty of different types of images, for example, here is one with the famous "Tsunami by hokusai" theme:
 
 ![image](../../assets/images/gol_resize_2.gif)
-
-## Full Code
-
-The entire implementation itself is available in a colab notebook:
-
-<a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/gol_diffusion.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="../../assets/images/colab.jpeg" width="50" height="50" /></span></button>
-</a>
