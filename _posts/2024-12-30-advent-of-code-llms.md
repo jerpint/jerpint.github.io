@@ -14,12 +14,13 @@ In this post I'll look at how LLMs performed on [Advent of Code 2024](https://ad
 Surprisingly, they didn't perform nearly as well as I'd expect, which we'll explore in this post.
 Here are the main results:
 
-<script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.9.1/gradio.js"
-></script>
 
-<gradio-app src="https://jerpint-advent24-llm.hf.space"></gradio-app>
+<iframe
+	src="https://jerpint-advent24-llm.hf.space"
+	frameborder="0"
+	width="620"
+	height="620"
+></iframe>
 
 ##  Intro
 
@@ -136,7 +137,12 @@ Remember: The goal here is not to see how well a meat-bag can steer a model, but
 ## Analysis
 Here are the results:
 
-<gradio-app src="https://jerpint-advent24-llm.hf.space"></gradio-app>
+<iframe
+	src="https://jerpint-advent24-llm.hf.space"
+	frameborder="0"
+	width="620"
+	height="620"
+></iframe>
 
 Surprisingly, I did much better than the LLMs, this was something I was not expecting!
 
