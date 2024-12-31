@@ -8,8 +8,6 @@ tags:
   - python
 ---
 
-<!-- ## TL;DR -->
-
 In this post I'll look at how LLMs performed on [Advent of Code 2024](https://adventofcode.com/).
 Surprisingly, they didn't perform nearly as well as I'd expect, which we'll explore in this post.
 Here are the main results:
@@ -21,6 +19,8 @@ Here are the main results:
 	width="620"
 	height="620"
 ></iframe>
+
+All code to reproduce these experiments can be found [here](https://huggingface.co/spaces/jerpint/advent24-llm/tree/main), and the space itself with the results lives [here](https://huggingface.co/spaces/jerpint/advent24-llm).
 
 ##  Intro
 
