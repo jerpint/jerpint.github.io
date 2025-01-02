@@ -12,6 +12,8 @@ header:
   og_image: /assets/images/gol_snapshot.jpg
 ---
 
+> Update: Follow the discussion on [HackerNews](https://news.ycombinator.com/item?id=40716154)
+
 ## TL;DR
 
 In this post, we we will be using [ControlNet](https://huggingface.co/docs/diffusers/en/using-diffusers/controlnet) to animate the [Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).

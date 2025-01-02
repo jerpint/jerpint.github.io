@@ -8,6 +8,8 @@ tags:
   - python
 ---
 
+> Update: Follow the discussion on [HackerNews](https://news.ycombinator.com/item?id=42551863)
+
 In this post I'll look at how LLMs performed on [Advent of Code 2024](https://adventofcode.com/).
 Surprisingly, they didn't perform nearly as well as I'd expect, which we'll explore in this post.
 Here are the main results:
