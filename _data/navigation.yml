@@ -5,5 +5,7 @@ main:
     url: /talks/
   - title: "About"
     url: /about/
+  - title: "Resume"
+    url: /resume/
   - title: "Publications"
     url: /publications/
