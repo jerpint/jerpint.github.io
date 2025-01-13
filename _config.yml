@@ -86,7 +86,7 @@ author:
       url: "https://jerpint.github.io"
     - label: "🤗 Hugging Face"
       icon: " "
-      url: "https://github.com/jerpint"
+      url: "https://huggingface.co/jerpint"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jerpint"
