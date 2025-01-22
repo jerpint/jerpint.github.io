@@ -23,7 +23,7 @@ There are [_insane videos_](https://www.youtube.com/watch?v=o3nBbvfdwkI) of peop
 Some absurd tasks include solving captchas, playing chess, geoguessing, and my favourite - [keeping Paul 🐔 alive.](https://youtu.be/o3nBbvfdwkI?si=JUI4VZfUv5BqfCmF&t=681).
 
 
-![image](../../assets/images/password-game/screenshot2.png/)
+![image](../../assets/images/password-game/screenshot2.png)
 
 
 ## Multimodal Agents
