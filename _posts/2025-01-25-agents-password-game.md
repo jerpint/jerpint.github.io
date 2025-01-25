@@ -59,7 +59,7 @@ It takes care of all the heavy-lifting.
 You just have to define a task for the LLMs.
 Here's what the LLMs "see":
 
-![image](../../assets/images/password-game/screenshot.png/)
+![image](../../assets/images/password-game/screenshot.png)
 
 I purposefully made the `task` prompt super simple - there are already plenty of prompts under the hood of `browser-use` 
 and the goal is to see how an agent performs with very little direction on the actual task:
