@@ -1,6 +1,5 @@
 ---
-title: "'The Password Game' is a Solid Benchmark for Multimodal Agents"
-
+title: "I had different agents play 'The Password Game' - they didn't do so well"
 
 date: 2025-01-22T00:00:00-05:00
 excerpt: "Comparing multimodal agents and how they struggle on 'The Password Game'"
@@ -10,6 +9,7 @@ tags:
   - agents
   - multimodal
 ---
+<!-- title: "'The Password Game' is a Solid Benchmark for Multimodal Agents" -->
 <!-- title: "Multimodal Agents Struggle with 'The Password Game'" -->
 <!-- title: "'The Password Game' is the ultimate benchmark for multimodal agents" -->
 
