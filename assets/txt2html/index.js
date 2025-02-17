@@ -92,8 +92,7 @@ document.getElementById('chat-input').addEventListener('keypress', function(e) {
 let ws = null;
 
 function connectWebSocket() {
-    ws = new WebSocket('ws://localhost:8000/ws');
-
+    ws = new WebSocket('wss://txt2html-58db07d06ee7.herokuapp.com/ws');
     ws.onopen = function() {
         console.log('Connected to server');
         // Add connection message to chat
