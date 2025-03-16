@@ -40,6 +40,8 @@ Here, I am trying to get various models to predict the first 20 digits of pi.
     
 ```python
 import shelve
+from litellm import completion
+
 model_predictions = shelve.open('pi_predictions')  # Will save to "model_predictions.db"
 
 models = ["gpt-4o", "gpt-4o-mini", "anthropic/claude-3-5-sonnet-20240620", "anthropic/claude-3-7-sonnet-20250219", "gemini/gemini-2.0-flash-001"]
