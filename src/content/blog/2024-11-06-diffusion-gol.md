@@ -68,7 +68,7 @@ ControlNet has the nice property that you can feed it both a start image as well
 In practice, this can be done using segmentation maps, canny edges, etc. With it, we can preserve the shapes while letting the model generate the fill.
 Here, ControlNet is used to map a painting to another painting while preserving the original structure.
 
-![image]../../assets/images/controlnet-text2img-demo.png)
+![image](../../assets/images/controlnet-text2img-demo.png)
 [source](https://huggingface.co/docs/diffusers/en/using-diffusers/controlnet)
 
 

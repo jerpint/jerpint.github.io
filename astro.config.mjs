@@ -5,5 +5,5 @@ import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://jerpint.github.io',
+  site: 'https://jerpint.io',
 })
