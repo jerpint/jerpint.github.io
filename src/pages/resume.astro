@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Page.astro';
+---
+
+<Layout
+	title="Resume"
+	description="Interactive resume - chat with my CV"
+>
+	<p>
+		I built an <a href="https://huggingface.co/spaces/jerpint/talk-to-resume/" target="_blank">interactive tool</a> for you to chat and interact with my resume.
+		You can also find a <a href="https://huggingface.co/spaces/jerpint/talk-to-resume/resolve/main/resume.pdf" target="_blank">pdf version here</a>.
+	</p>
+
+	<iframe
+		src="https://jerpint-talk-to-resume.hf.space"
+		style="width: 100%; min-width: 0; min-height: 600px; border: 2px solid var(--border-color); max-width: 1200px;"
+	></iframe>
+</Layout>

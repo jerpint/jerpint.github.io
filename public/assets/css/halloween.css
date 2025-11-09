@@ -1,0 +1,168 @@
+@import url(https://fonts.googleapis.com/css?family=Denk+One);
+
+
+@dark-red: #8B0000;
+@red: 139;
+@green: 0;
+@blue: 0;
+
+header {
+    display: none
+}
+footer {
+    display: none
+}
+
+body {
+  /* background-color: @dark-gray; */
+  background-color: black;
+  color: darkred;
+  letter-spacing: 1px;
+  /* margin: auto; */
+}
+/* $max-width:90%; */
+.page {
+  /* width: calc(200% - #{$right-sidebar-width-narrow}); */
+  width: 100%;
+}
+
+h1 {
+  color: transparent;
+  /* line-height: 0.45; */
+  text-shadow: 0 0 5px rgba(200, 0,0,0.5);
+  font-family: 'Denk One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3.5em;
+  margin:0;
+  padding:0;
+  text-align: center;
+  border-bottom: 3px solid darkred;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: jitter;
+}
+
+h2 {
+  color: transparent;
+  /* line-height: 0.45; */
+  text-shadow: 0 0 5px rgba(200, 0,0,0.5);
+  font-family: 'Denk One', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3em;
+  margin:0;
+  padding:0;
+}
+
+h3 {
+  color: transparent;
+  /* color: @dark-red; */
+  text-shadow: 0 0 5px rgba(200, 0,0,0.5);
+  font-family: 'Denk One', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 2em;
+  text-align: center;
+  margin:0;
+  padding:0; 
+  margin-bottom:1em;
+  
+}
+
+h4 {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(200, 0,0,0.5);
+  font-family: 'Denk One', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 4em;
+  text-align: center;
+  line-height: 0.45;
+  margin:0;
+  padding:0; 
+  animation-duration: .3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3;
+  animation-name: jitter;
+}
+
+
+span {
+  font-size: 0.4em;
+}
+
+
+h1:hover {
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: jitter;
+}
+
+h3:hover {
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: jitter;
+}
+
+h4:hover {
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: jitter;
+}
+
+img:hover {
+    animation-duration: .3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: jitter;
+}
+
+
+@keyframes jitter {
+    10% {
+        transform: translate(-2px, -3px) scale(1.01, 1.01);
+    }
+    20% {
+        transform: translate(3px, 2px) scale(.99, .99);
+    }
+    30% {
+        transform: translate(-4px, -5px) scale(1.01, 1.01);
+    }
+    40% {
+        transform: translate(2px, 3px) scale(1, 1);
+    }
+    50% {
+        transform: translate(-1px, -2px) scale(.98, .98);
+    }
+    60% {
+        transform: translate(0px, 3px) scale(1.02, 1.02);
+    }
+    70% {
+        transform: translate(-2px, -4px) scale(1, 1);
+    }
+    80% {
+        transform: translate(3px, 5px) scale(.99, .99);
+    }
+    90% {
+        transform: translate(-5px, -3px) scale(1.1, 1.1);
+    }
+    100% {
+        transform: translate(3px, 1px) scale(.95, .95);
+    }
+}
+
