@@ -1,0 +1,246 @@
+---
+import Layout from '../layouts/Page.astro';
+
+const publications = [
+	{
+		title: "Ignore This Title and HackAPrompt: Exposing Systemic Vulnerabilities of LLMs through a Global Scale Prompt Hacking Competition",
+		authors: "S Schulhoff, J Pinto, A Khan, LF Bouchard, C Si, S Anati, V Tagliabue, et al.",
+		venue: "Empirical Methods in Natural Language Processing (EMNLP)",
+		year: 2023,
+		citations: 158,
+		link: "https://paper.hackaprompt.com/",
+		award: "EMNLP2023 Best Theme Paper Award"
+	},
+	{
+		title: "Current practices in voice data collection and limitations to voice AI research: a national survey",
+		authors: "E Evangelista, R Kale, D McCutcheon, A Rameau, A Gelbard, M Powell, et al.",
+		venue: "The Laryngoscope 134 (3), 1333-1339",
+		year: 2024,
+		citations: 11
+	},
+	{
+		title: "Deep learning for voice gender identification: proof‐of‐concept for gender‐affirming voice care",
+		authors: "Y Bensoussan, J Pinto, M Crowson, PR Walden, F Rudzicz, M Johns III",
+		venue: "The Laryngoscope 131 (5), E1611-E1615",
+		year: 2021,
+		citations: 18
+	},
+	{
+		title: "A comparison of an artificial intelligence tool to fundamental frequency as an outcome measure in people seeking a more feminine voice",
+		authors: "Y Bensoussan, C Park, M Johns III, S Brown, J Pinto, J Chang, M Courey",
+		venue: "The Laryngoscope 131 (11), 2567-2571",
+		year: 2021,
+		citations: 6
+	},
+	{
+		title: "Validation of an AI-assisted treatment outcome measure for gender-affirming voice care: comparing AI accuracy to listener's perception of voice femininity",
+		authors: "S Simon, E Silverstein, L Timmons-Sund, JM Pinto, ME Castro, K O'Dell, et al.",
+		venue: "Journal of Voice",
+		year: 2023,
+		citations: 3
+	},
+	{
+		title: "Cancer Classification in Human Brain and Prostate Using Raman Spectroscopy and Machine Learning",
+		authors: "J Pinto",
+		venue: "University of Waterloo (MASc. Thesis)",
+		year: 2017,
+		citations: 1
+	},
+	{
+		title: "Road Defect Detection in Street View Images using Texture Descriptors and Contour Maps",
+		authors: "D Abou Chacra, H Leopold, J Pinto, N Lunscher, G Younes, J Zelek",
+		venue: "Journal of Computational Vision and Imaging Systems 2 (1)",
+		year: 2016,
+		citations: 4
+	},
+	{
+		title: "IR Shape From Shading Enhanced RGBD for 3D Scanning",
+		authors: "N Lunscher, G Younes, D Abou Chacra, H Leopold, J Pinto, J Zelek",
+		venue: "Journal of Computational Vision and Imaging Systems 2 (1)",
+		year: 2016,
+		citations: 0
+	},
+	{
+		title: "Scaled Monocular Visual SLAM",
+		authors: "G Younes, D Asmar, J Zelek, D Abou Chacra, H Leopold, J Pinto, et al.",
+		venue: "Journal of Computational Vision and Imaging Systems 2 (1)",
+		year: 2016,
+		citations: 0
+	},
+	{
+		title: "Spatial Detection of Vehicles in Images using Convolutional Neural Networks and Stereo Matching",
+		authors: "J Pinto, N Lunscher, G Younes, D Abou Chacra, H Leopold, J Zelek",
+		venue: "Journal of Computational Vision and Imaging Systems 2 (1)",
+		year: 2016,
+		citations: 0
+	}
+];
+---
+
+<Layout
+	title="Publications"
+	description="Academic publications and research"
+>
+	<div class="intro">
+		<p>
+			For a complete and up-to-date list, visit my <a href="https://scholar.google.com/citations?user=e-N_8owAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+		</p>
+	</div>
+
+	<div class="publications-list">
+		{publications.map((pub) => (
+			<article class="publication-card">
+				<div class="pub-header">
+					<h3 class="pub-title">
+						{pub.link ? (
+							<a href={pub.link} target="_blank" rel="noopener noreferrer">{pub.title}</a>
+						) : (
+							pub.title
+						)}
+					</h3>
+					{pub.award && (
+						<span class="award-badge">🏆 {pub.award}</span>
+					)}
+				</div>
+
+				<div class="pub-authors">{pub.authors}</div>
+				<div class="pub-venue">{pub.venue}</div>
+
+				<div class="pub-meta">
+					<span class="meta-item">
+						<span class="meta-label">Year:</span>
+						<span class="meta-value">{pub.year}</span>
+					</span>
+					<span class="meta-item">
+						<span class="meta-label">Citations:</span>
+						<span class="meta-value">{pub.citations}</span>
+					</span>
+				</div>
+			</article>
+		))}
+	</div>
+
+	<style>
+		.intro {
+			margin-bottom: 3em;
+			padding: 1.5em;
+			background-color: #f8f9fa;
+			border-left: 3px solid var(--accent);
+			border-radius: 4px;
+		}
+
+		.intro p {
+			margin: 0;
+		}
+
+		.publications-list {
+			display: flex;
+			flex-direction: column;
+			gap: 2em;
+		}
+
+		.publication-card {
+			padding: 1.5em;
+			background: white;
+			border: 1px solid var(--border-color);
+			border-radius: 8px;
+			transition: all 0.2s ease;
+			box-shadow: var(--shadow-sm);
+		}
+
+		.publication-card:hover {
+			box-shadow: var(--shadow-md);
+			border-color: var(--accent);
+		}
+
+		.pub-header {
+			margin-bottom: 0.8em;
+		}
+
+		.pub-title {
+			font-size: 1.1em;
+			margin: 0 0 0.5em 0;
+			line-height: 1.4;
+			font-weight: 600;
+			color: rgb(var(--black));
+		}
+
+		.pub-title a {
+			color: rgb(var(--black));
+			text-decoration: none;
+			border-bottom: none;
+		}
+
+		.pub-title a:hover {
+			color: var(--accent);
+		}
+
+		.award-badge {
+			display: inline-block;
+			padding: 0.3em 0.8em;
+			background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+			color: #8b6914;
+			font-size: 0.75em;
+			font-weight: 600;
+			border-radius: 4px;
+			margin-top: 0.5em;
+			box-shadow: 0 2px 4px rgba(255, 215, 0, 0.3);
+		}
+
+		.pub-authors {
+			color: rgb(var(--gray));
+			font-size: 0.9em;
+			margin-bottom: 0.5em;
+			line-height: 1.5;
+		}
+
+		.pub-venue {
+			color: rgb(var(--gray-dark));
+			font-size: 0.9em;
+			font-style: italic;
+			margin-bottom: 1em;
+		}
+
+		.pub-meta {
+			display: flex;
+			gap: 2em;
+			padding-top: 1em;
+			border-top: 1px solid var(--border-color);
+			font-size: 0.85em;
+		}
+
+		.meta-item {
+			display: flex;
+			align-items: center;
+			gap: 0.5em;
+		}
+
+		.meta-label {
+			color: rgb(var(--gray));
+			font-weight: 600;
+		}
+
+		.meta-value {
+			color: rgb(var(--black));
+			font-weight: 600;
+			background-color: #f0f0f0;
+			padding: 0.2em 0.6em;
+			border-radius: 3px;
+		}
+
+		@media (max-width: 720px) {
+			.publication-card {
+				padding: 1.2em;
+			}
+
+			.pub-title {
+				font-size: 1em;
+			}
+
+			.pub-meta {
+				flex-direction: column;
+				gap: 0.5em;
+			}
+		}
+	</style>
+</Layout>

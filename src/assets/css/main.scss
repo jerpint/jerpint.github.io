@@ -1,0 +1,16 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+$serif: "Fira Code", Monaco, Consolas, monospace !default;
+$sans-serif: "Fira Code", Monaco, Consolas, monospace !default;
+$monospace: "Fira Code", Monaco, Consolas, monospace !default;
+$global-font-family: $monospace !default;
+$global-font-size: 12 !default;
+
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
