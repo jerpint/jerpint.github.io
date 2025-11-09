@@ -27,7 +27,7 @@ This will bring you to Colab, an online python notebook interpreter.
 The code will run directly in your browser (chrome, firefox, etc.)
 
 <a href='https://colab.research.google.com/github/jerpint/whatsapp/blob/master/whatsapp_analysis.ipynb'>
-<button type='button'>&nbsp;View the code on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;View the code on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 # Upload your file

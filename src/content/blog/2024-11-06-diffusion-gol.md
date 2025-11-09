@@ -12,22 +12,22 @@ In this post, we we will be using [ControlNet](https://huggingface.co/docs/diffu
 
 <div style="display: flex; justify-content: space-between;">
   <figure style="margin: 0 10px;">
-    <img src="/src/assets/images/gol_resize.gif" alt="Image 1" style="width: 100%;"/>
+    <img src="/assets/images/gol_resize.gif" alt="Image 1" style="width: 100%;"/>
     <figcaption style="text-align: center;">Air</figcaption>
   </figure>
   <figure style="margin: 0 10px;">
-    <img src="/src/assets/images/gol_resize_2.gif" alt="Image 2" style="width: 100%;"/>
+    <img src="/assets/images/gol_resize_2.gif" alt="Image 2" style="width: 100%;"/>
     <figcaption style="text-align: center;">Water</figcaption>
   </figure>
 </div>
 
 <div style="display: flex; justify-content: space-between;">
   <figure style="margin: 0 10px;">
-    <img src="/src/assets/images/gol_resize_3.gif" alt="Image 3" style="width: 100%;"/>
+    <img src="/assets/images/gol_resize_3.gif" alt="Image 3" style="width: 100%;"/>
     <figcaption style="text-align: center;">Fire</figcaption>
   </figure>
   <figure style="margin: 0 10px;">
-    <img src="/src/assets/images/gol_resize_4.gif" alt="Image 4" style="width: 100%;"/>
+    <img src="/assets/images/gol_resize_4.gif" alt="Image 4" style="width: 100%;"/>
     <figcaption style="text-align: center;">Earth</figcaption>
   </figure>
 </div>
@@ -50,7 +50,7 @@ They both have GPU usage limits, so you can play around with both and see what w
 ></iframe>
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/gol_diffusion.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 

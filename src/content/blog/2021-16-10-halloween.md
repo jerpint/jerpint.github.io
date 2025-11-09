@@ -7,7 +7,7 @@ title: Halloween
 ### The hideous thing was watching me. It was sitting at the end of my bed, its hands folded in its lap. It was watching me with its cold, dead eyes, just waiting.
 
 <p align="center">
-  <img width="400" src="/src/assets/images/creepy_pasta6.gif">
+  <img width="400" src="/assets/images/creepy_pasta6.gif">
 </p>
 
 <br>
@@ -17,7 +17,7 @@ title: Halloween
 
 ### It was watching me with those awful, dead eyes, and I couldn't help but feel that it was accusing me. Accusing me of the worst crime ever imaginable. Accusing me of the worst crime in the history of mankind.
 <p align="center">
-  <img width="400" src="/src/assets/images/creepy_pasta5.gif">
+  <img width="400" src="/assets/images/creepy_pasta5.gif">
 </p>
 
 <br>
@@ -26,7 +26,7 @@ title: Halloween
 
 ### It was looking at me now. It was waiting for me to sign the confession. Waiting. Not moving, not breathing. Just sitting there, waiting for me to sign the confession, waiting for me to admit my guilt and my crime and my sin…
 <p align="center">
-  <img width="400" src="/src/assets/images/creepy_pasta7.gif">
+  <img width="400" src="/assets/images/creepy_pasta7.gif">
 </p>
 
 <br>

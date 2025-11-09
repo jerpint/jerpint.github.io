@@ -202,5 +202,5 @@ All you have to do is source your sendgrid API keys before running.
 Enjoy!
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/reserve_climb.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>

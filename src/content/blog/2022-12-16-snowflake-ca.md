@@ -6,7 +6,7 @@ title: "Making snowflakes with cellular automata \u2744\uFE0F"
 TL;DR: Generate snowflakes using cellular automata.
 
 <a href="https://colab.research.google.com/drive/1bvOigjYLq3Rrt-QwDqjjr_0aP33T1Elc?usp=sharing">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 <html>
@@ -84,6 +84,6 @@ Now we can simply iterate over this and generate pretty snowflakes!
 
 
 <a href="https://colab.research.google.com/drive/1bvOigjYLq3Rrt-QwDqjjr_0aP33T1Elc?usp=sharing">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 

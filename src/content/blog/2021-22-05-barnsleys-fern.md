@@ -6,7 +6,7 @@ title: Barnsley's Fern
 # Barnsley's Fern
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/Barnley's_Fern.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 In 1988, Michael Barnsley published an elegant way to programatically generate ferns. The rules are rather simple: iteratively apply a rotation + translation to a coordinate with certain probabilities, and voilà!
@@ -88,5 +88,5 @@ plt.axis("off")
 That's it! All the code to reproduce this is on Colab:
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/Barnley's_Fern.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>

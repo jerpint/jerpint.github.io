@@ -7,7 +7,7 @@ title: GPT4 Can't Play Wordle
 Out of 10 games, GPT4 only gets 1/10 correct. All of the code to reproduce these results is [made available](https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/gpt-4ordl/wordle.ipynb).
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/gpt-4ordl/wordle.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 

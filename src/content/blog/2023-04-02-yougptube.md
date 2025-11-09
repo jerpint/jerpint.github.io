@@ -7,7 +7,7 @@ title: YouGPTube
 
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/youGPTube.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 ## Video
@@ -69,6 +69,6 @@ I'll be giving that video a listen soon!
 All code is availble on colab!
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/youGPTube.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 

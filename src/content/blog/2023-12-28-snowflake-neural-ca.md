@@ -23,7 +23,7 @@ In this post, we will look at how to generate snowflakes using neural cellular a
 <br>
 
 <video class="centered-video" controls autoplay loop>
-  <source src="/src/assets/images/neural_ca_snowflake.mp4" type="video/mp4">
+  <source src="/assets/images/neural_ca_snowflake.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
@@ -33,7 +33,7 @@ All code used is available in a notebook:
 
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/neural_ca.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 
@@ -146,7 +146,7 @@ def forward(self, grid):
 
 So what exactly are we learning anyway? We start with a target of a snowflake, in our case the snowflake a snowflake emoji:
 
-<img width=200 alt="A photo of a snowflake emoji" src="/src/assets/images/snowflake_emoji.png" alt="Snowflake Emoji" style="display: block; margin-left: auto; margin-right: auto;">
+<img width=200 alt="A photo of a snowflake emoji" src="/assets/images/snowflake_emoji.png" alt="Snowflake Emoji" style="display: block; margin-left: auto; margin-right: auto;">
 
 
 Then, starting from our seed, we evolve our grid for a random amount of steps, and simply calculate the `MSELoss()` between our original emoji and what we evolved.
@@ -185,13 +185,13 @@ def train_loop(image: Image, num_epochs: int) -> NeuralCA:
 After training for a set number of epochs, we eventually have a proper snowflake cellular automata:
 
 <video class="centered-video" controls autoplay loop>
-  <source src="/src/assets/images/neural_ca_snowflake.mp4" type="video/mp4">
+  <source src="/assets/images/neural_ca_snowflake.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
 
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/neural_ca.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 

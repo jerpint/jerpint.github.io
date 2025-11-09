@@ -5,7 +5,7 @@ title: Reversing a Neural Network
 ---
 
 <a href='https://colab.research.google.com/drive/1ODzFT8u4PyXFqRdgYkrICfNM2xY6F2El?usp=sharing'>
-<button type='button'>&nbsp;View the code on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;View the code on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 In this post, we are going to explore how to "reverse" a neural network - also known as [feature visualization](https://distill.pub/2017/feature-visualization/).
@@ -45,5 +45,5 @@ More recently, it was used to [study multi-modal inputs in DALL-E](https://opena
 I made [all the code available](https://colab.research.google.com/drive/1ODzFT8u4PyXFqRdgYkrICfNM2xY6F2El?usp=sharing), so you can try looking for weird creatures yourself!
 
 <a href='https://colab.research.google.com/drive/1ODzFT8u4PyXFqRdgYkrICfNM2xY6F2El?usp=sharing'>
-<button type='button'>&nbsp;View the code on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;View the code on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>

@@ -10,7 +10,7 @@ Animate a QR code using Conway's game of Life:
 ![image]../../assets/images/qr_code_gif.gif)
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/Conway's_QR_Code.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
 
 # Conway's game of Life
@@ -129,5 +129,5 @@ Ah, so satisfying!
 All the code to reproduce this is on Colab:
 
 <a href="https://colab.research.google.com/github/jerpint/jerpint.github.io/blob/master/colabs/Conway's_QR_Code.ipynb">
-<button type='button'>&nbsp;Check it out on <span><img src="/src/assets/images/colab.jpeg" width="50" height="50" /></span></button>
+<button type='button'>&nbsp;Check it out on <span><img src="/assets/images/colab.jpeg" width="50" height="50" /></span></button>
 </a>
