@@ -6,7 +6,9 @@ import ThemeIcon from './ThemeIcon.astro';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<a href="/" class="logo">
+			<img src="/favicon.svg" alt="Site Logo" />
+		</a>
 		<div class="internal-links">
 			<HeaderLink href="/">~/home</HeaderLink>
 			<HeaderLink href="/blog">~/posts</HeaderLink>
@@ -67,6 +69,33 @@ import ThemeIcon from './ThemeIcon.astro';
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 1.2em 1.5em;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		border-bottom: none;
+	}
+
+	.logo:hover {
+		background-color: transparent;
+		border-bottom: none;
+	}
+
+	.logo img {
+		height: 36px;
+		width: 36px;
+		transition: transform 0.2s ease;
+	}
+
+	/* Dark mode styling for logo */
+	:global(html.dark) .logo img {
+		filter: invert(1);
+	}
+
+	.logo:hover img {
+		transform: scale(1.1);
 	}
 
 	.internal-links {
@@ -130,6 +159,11 @@ import ThemeIcon from './ThemeIcon.astro';
 
 		h2 {
 			font-size: 1em;
+		}
+
+		.logo img {
+			height: 28;
+			width: 28;
 		}
 
 		.social-links {
