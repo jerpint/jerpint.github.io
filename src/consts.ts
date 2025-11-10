@@ -2,4 +2,4 @@
 // You can import this data from anywhere in your site by using the `import` keyword.
 
 export const SITE_TITLE = 'jerpint';
-export const SITE_DESCRIPTION = 'hello world';
+export const SITE_DESCRIPTION = 'Technical writing on ML, AI, and software engineering';
