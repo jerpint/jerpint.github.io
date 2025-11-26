@@ -8,6 +8,8 @@ If you ask claude, gemini and gpt to tell you a joke, they are all very likely t
 
 > Why don't scientists trust atoms? Because they make up everything!
 
+![image](../../assets/images/model_slop.png)
+
 It's not a terrible joke per se, but what is surprising is that all big lab models are very likely to tell you this joke.
 
 Let's use the API and ask each provider to tell us a joke 3 different times: 
@@ -232,7 +234,7 @@ Not surprisingly, they are not doing so good either. Here I ran the same prompt 
 
 ![image](../../assets/images/random_numbers.png)
 
-We get a huge disproportionate amount for 42 (I guess somewhat obvious), but also a disproportionate amount of 73, 57 and 47.
+We get a huge disproportionate amount for 42 (I guess somewhat obvious), but also a disproportionate amount of 73 and 57.
 
 ## What's going on
 
@@ -241,9 +243,9 @@ You'd expect each training run to produce entirely different results - especiall
 
 So what's going on? I'm not sure but I have a few ideas.
 
-- Benchmaxxing and overfitting on preference datasets could lead to similar biases
+- Benchmaxxing and overfitting on the same preference datasets could lead to similar biases
 - Big model companies use similar data providers
-- Maybe model companies distill on each others' models?
+- Maybe some model companies distill on each others' models?
 
 One thing is certain, if all models start outputing the same things over and over, we risk finding ourselves seeing the same bland ideas regurgitated over and over.
 
