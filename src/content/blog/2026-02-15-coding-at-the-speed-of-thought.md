@@ -1,6 +1,6 @@
 ---
 title: Coding at the speed of thought
-description: How coding velocity is increasing
+description: Thinking is becoming the new bottleneck in coding
 pubDate: 2026-02-15 00:00:00-05:00
 ---
 
