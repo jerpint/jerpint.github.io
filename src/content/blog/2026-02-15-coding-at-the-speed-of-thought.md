@@ -1,5 +1,5 @@
 ---
-title: Generating code at the speed of thought
+title: Coding at the speed of thought
 description: How coding velocity is increasing
 pubDate: 2026-02-15 00:00:00-05:00
 ---
