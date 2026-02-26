@@ -151,6 +151,22 @@ img {
 	margin: 1.5em 0;
 }
 
+figure {
+	margin: 2em 0;
+	padding: 0;
+}
+
+figure img {
+	margin-bottom: 0.5em;
+}
+
+figcaption {
+	font-size: 0.95em;
+	color: rgb(var(--gray));
+	font-style: italic;
+	text-align: center;
+}
+
 code {
 	padding: 0.2em 0.4em;
 	background-color: var(--code-bg);
@@ -180,9 +196,9 @@ pre > code {
 }
 
 blockquote {
-	border-left: 3px solid var(--accent);
-	padding: 0.5em 0 0.5em 1.5em;
-	margin: 2em 0;
+	border-left: 4px solid var(--accent);
+	padding: 0 1em;
+	margin: 1em 0;
 	font-style: italic;
 	color: rgb(var(--gray-dark));
 }
