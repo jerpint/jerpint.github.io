@@ -51,7 +51,7 @@ export const GET: APIRoute = async ({ props }) => {
             props: {
               style: {
                 display: 'flex',
-                alignItems: 'center',
+                alignItems: 'flex-end',
                 gap: '16px',
               },
               children: [
@@ -59,8 +59,8 @@ export const GET: APIRoute = async ({ props }) => {
                   type: 'img',
                   props: {
                     src: faviconBase64,
-                    width: 48,
-                    height: 56,
+                    width: 140,
+                    height: 163,
                     style: { objectFit: 'contain' },
                   },
                 },
@@ -68,9 +68,11 @@ export const GET: APIRoute = async ({ props }) => {
                   type: 'span',
                   props: {
                     style: {
-                      fontSize: '24px',
-                      color: '#3c3c3c',
-                      fontWeight: 400,
+                      fontSize: '42px',
+                      color: '#141414',
+                      fontWeight: 700,
+                      lineHeight: 1,
+                      marginBottom: '10px',
                     },
                     children: 'jerpint',
                   },
@@ -85,19 +87,20 @@ export const GET: APIRoute = async ({ props }) => {
               style: {
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '20px',
                 flex: '1',
-                justifyContent: 'center',
+                justifyContent: 'flex-end',
+                paddingBottom: '20px',
               },
               children: [
                 {
                   type: 'div',
                   props: {
                     style: {
-                      width: '60px',
+                      width: '80px',
                       height: '4px',
-                      backgroundColor: '#0066cc',
+                      backgroundColor: '#141414',
                       borderRadius: '2px',
+                      marginBottom: '8px',
                     },
                   },
                 },
@@ -119,10 +122,11 @@ export const GET: APIRoute = async ({ props }) => {
                   type: 'p',
                   props: {
                     style: {
-                      fontSize: '20px',
+                      fontSize: '24px',
                       color: '#787878',
                       lineHeight: 1.5,
                       margin: 0,
+                      marginTop: '4px',
                       fontWeight: 400,
                     },
                     children: description,
@@ -138,7 +142,7 @@ export const GET: APIRoute = async ({ props }) => {
               style: {
                 display: 'flex',
                 justifyContent: 'flex-end',
-                borderTop: '1px solid #e5e5e5',
+                borderTop: '1px solid #d0d0d0',
                 paddingTop: '20px',
               },
               children: {
@@ -146,7 +150,7 @@ export const GET: APIRoute = async ({ props }) => {
                 props: {
                   style: {
                     fontSize: '16px',
-                    color: '#a0a0a0',
+                    color: '#909090',
                     fontWeight: 400,
                   },
                   children: 'jerpint.io',
@@ -160,6 +164,22 @@ export const GET: APIRoute = async ({ props }) => {
     {
       width: 1200,
       height: 630,
+      loadAdditionalAsset: async (code: string, segment: string) => {
+        if (code === 'emoji') {
+          // Use twemoji SVGs for emoji rendering
+          const codePoints = [...segment]
+            .map((char) => char.codePointAt(0)!.toString(16))
+            .join('-');
+          const res = await fetch(
+            `https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/${codePoints}.svg`
+          );
+          if (res.ok) {
+            const svg = await res.text();
+            return `data:image/svg+xml;base64,${Buffer.from(svg).toString('base64')}`;
+          }
+        }
+        return '';
+      },
       fonts: [
         {
           name: 'JetBrains Mono',
