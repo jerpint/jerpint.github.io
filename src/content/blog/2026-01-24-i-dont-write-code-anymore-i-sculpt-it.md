@@ -4,6 +4,8 @@ description: how I'm using ai tools in 2026
 pubDate: 2026-01-24 00:00:00-05:00
 ---
 
+> Follow the discussion on [HN](https://news.ycombinator.com/item?id=46748077)
+
 I've noticed a shift in how I code.
 I rarely write code anymore - `claude-code` does most of the _coding_ for me. 
 I _sculpt_ the outputs into something more durable.
