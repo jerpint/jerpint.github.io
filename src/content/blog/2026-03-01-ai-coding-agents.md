@@ -1,18 +1,40 @@
 ---
-title: AI Coding Agents
-description: Reflections on how AI coding agents have changed the way I write code and contribute to our company repo.
+title: Shipping more without coding
+description: The paradox of not writing any code while shipping more and more features
 pubDate: 2026-03-01 00:00:00-05:00
 ---
 
-I can't remember the last time I typed a line of code in our company repo myself. It must have been in end of 2025 or so. At the same time, I've never contributed more to the repo since I've stopped writing the actual code.
+I can't remember the last time I typed a line of code in our company's repo. 
+I also feel like I've been contributing significantly more to our repo since I stopped writing the actual code.
 
-I think there's an interesting experiment to be made. If you attached a keylogger to my computer, would you count me  entering more or less keystrokes since agents?  Would each entry contain more or less information density ?
+There's a tension to that, and I have an interesting thought experiment:
 
-My hypothesis is that each line I write today is 10x more information dense than the code I used to write. I can also produce it 10x faster since I don't need to worry about syntax and grammar.  It also tends to be 10x more ambiguous- hence the need to still verify if the coding agents translate my information inputs to code outputs.
+1. **If you attached a keylogger to my computer, would you observe me entering more or less keystrokes since agents?**
+I would wager I have been typing significantly more since I used to write the code myself.
+
+2. **Would each entry contain more or less information density?** 
+I would also argue that the things I type contain much more information density; e.g. 
+a single prompt or code planning session contains significantly more "core idea" outputs than a session where I myself write code.
 
 
-There's a contradiction there- if I'm not writing the code than what role do I serve? is the code the contribution , or the ideas behind it?
+I think the paradox might be solved by the following concept: 
 
-I have the stereotypical workflow- 5+ claude code instances working in parallel, each on their own tasks, firing away.
+> I was never contributing **just** code, I was always contributing **ideas**.
 
-I have never seen a single line of our automatically generated machine code. I have no idea where the code we ship actually gets served in production (some data center somewhere). Yet I know these systems well enough to know what they can do and what I can trust about them. Once configured, they work for me. Some need attention, some are abstractions you never even think of anymore.
+My hypothesis is that each input I write today is significantly more information dense than the code I used to write. 
+I can also produce inputs significantly faster since I don't need to worry about syntax and grammar. 
+Coding agents can then materialize approximations of my ideas way faster than I could ever type them out.
+It also tends to be much more ambiguous- hence the need and importance to still verify if the agents translated my inputs to outputs that match my intent.
+
+Similarly, I have never written a single line of our automatically generated machine code. 
+I have no idea where the code we ship actually gets served in production (some data center somewhere in a specified region). 
+Yet I know these systems well enough to know what they can do and what I can trust about them. 
+Once configured, they work for me. 
+Some need attention, some are abstractions you never even think of anymore.
+
+Contributing ideas is hard, but iterating on these ideas has now become much easier.
+I think idea contribution won't be changing any time soon.
+We've just stepped up on the abstraction layer.
+Agents today aren't good at thinking outside the box past their context window.
+Agents are great in closed-loop systems, where a result can be instantly compared to a verifiable reward.
+But new ideas don't work that way. At least not yet.
