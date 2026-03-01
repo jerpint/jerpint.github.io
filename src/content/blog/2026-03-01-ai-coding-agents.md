@@ -1,6 +1,6 @@
 ---
-title: Shipping more without coding
-description: The paradox of not writing any code while shipping more and more features
+title: The paradox of shipping more while coding less
+description: The tension between not writing any code while shipping significantly more
 pubDate: 2026-03-01 00:00:00-05:00
 ---
 
