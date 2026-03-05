@@ -237,6 +237,30 @@ li {
 	h2 {
 		font-size: 1.4em;
 	}
+
+	pre {
+		padding: 1em;
+		border-radius: 4px;
+		margin-left: -1em;
+		margin-right: -1em;
+		border-left: none;
+		border-right: none;
+	}
+
+	table {
+		display: block;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	blockquote {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	ul, ol {
+		padding-left: 1.5em;
+	}
 }
 
 /* Focus states for accessibility */

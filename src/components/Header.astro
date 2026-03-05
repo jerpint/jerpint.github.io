@@ -9,6 +9,11 @@ import ThemeIcon from './ThemeIcon.astro';
 		<a href="/" class="logo">
 			<img src="/favicon.svg" alt="Site Logo" />
 		</a>
+		<button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
 		<div class="internal-links">
 			<HeaderLink href="/">~/home</HeaderLink>
 			<HeaderLink href="/blog">~/posts</HeaderLink>
@@ -143,18 +148,83 @@ import ThemeIcon from './ThemeIcon.astro';
 		background-color: transparent;
 	}
 
+	/* Hamburger button */
+	.hamburger {
+		display: none;
+		background: none;
+		border: none;
+		cursor: pointer;
+		padding: 0.5em;
+		flex-direction: column;
+		gap: 5px;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	.hamburger span {
+		display: block;
+		width: 20px;
+		height: 2px;
+		background-color: rgb(var(--gray-dark));
+		border-radius: 1px;
+		transition: transform 0.25s ease, opacity 0.2s ease;
+		transform-origin: center;
+	}
+
+	.hamburger.open span:nth-child(1) {
+		transform: translateY(7px) rotate(45deg);
+	}
+
+	.hamburger.open span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.hamburger.open span:nth-child(3) {
+		transform: translateY(-7px) rotate(-45deg);
+	}
+
+	:global(html.dark) .hamburger span {
+		background-color: rgb(var(--gray));
+	}
+
 	@media (max-width: 720px) {
+		.hamburger {
+			display: flex;
+		}
+
 		nav {
-			padding: 1em;
+			padding: 0.8em 1em;
+			flex-wrap: wrap;
 		}
 
 		.internal-links {
-			gap: 0.2em;
+			flex-direction: column;
+			width: 100%;
+			order: 3;
+			gap: 0;
+			padding-top: 0.6em;
+			border-top: 1px solid var(--border-color);
+			margin-top: 0.6em;
+			overflow: hidden;
+			max-height: 0;
+			opacity: 0;
+			transition: max-height 0.3s ease, opacity 0.2s ease, margin-top 0.3s ease, padding-top 0.3s ease;
+			margin-top: 0;
+			padding-top: 0;
+			border-top-color: transparent;
+		}
+
+		.internal-links.open {
+			max-height: 300px;
+			opacity: 1;
+			margin-top: 0.6em;
+			padding-top: 0.6em;
+			border-top-color: var(--border-color);
 		}
 
 		nav a {
-			padding: 0.4em 0.6em;
-			font-size: 0.85em;
+			padding: 0.6em 0.8em;
+			font-size: 0.9em;
+			border-radius: 4px;
 		}
 
 		h2 {
@@ -174,3 +244,14 @@ import ThemeIcon from './ThemeIcon.astro';
 		}
 	}
 </style>
+
+<script>
+	const hamburger = document.querySelector('.hamburger');
+	const internalLinks = document.querySelector('.internal-links');
+
+	hamburger?.addEventListener('click', () => {
+		hamburger.classList.toggle('open');
+		const isOpen = internalLinks?.classList.toggle('open');
+		hamburger.setAttribute('aria-expanded', String(isOpen));
+	});
+</script>

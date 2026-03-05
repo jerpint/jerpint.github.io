@@ -18,8 +18,10 @@ import profilePhoto from '../assets/images/jer-photo.jpeg';
 				justify-content: center;
 			}
 			.profile-photo {
-				width: 300px;
-				height: 300px;
+				max-width: 300px;
+				width: 100%;
+				height: auto;
+				aspect-ratio: 1 / 1;
 				border-radius: 50%;
 				margin: 0 auto 1.5em;
 				display: block;
@@ -93,12 +95,17 @@ import profilePhoto from '../assets/images/jer-photo.jpeg';
 		}
 
 		@media (max-width: 720px) {
+			.profile-photo {
+				max-width: 200px;
+			}
+
 			h1 {
 				font-size: 2em;
 			}
 
 			.subtitle {
-				font-size: 1em;
+				font-size: 0.95em;
+				margin-bottom: 1.5em;
 			}
 		}
 		</style>
