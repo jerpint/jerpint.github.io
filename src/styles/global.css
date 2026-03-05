@@ -261,6 +261,11 @@ li {
 	ul, ol {
 		padding-left: 1.5em;
 	}
+
+	code {
+		word-break: break-word;
+		font-size: 0.85em;
+	}
 }
 
 /* Focus states for accessibility */

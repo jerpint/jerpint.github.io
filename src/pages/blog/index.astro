@@ -63,10 +63,17 @@ const posts = (await getCollection('blog')).sort(
 				font-weight: 600;
 			}
 
-			.date {
-				margin: 0;
+			.description {
+				margin: 0.3em 0 0;
 				color: rgb(var(--gray));
 				font-size: 0.9em;
+				line-height: 1.5;
+			}
+
+			.date {
+				margin: 0.4em 0 0;
+				color: rgb(var(--gray));
+				font-size: 0.85em;
 			}
 
 			ul li a:hover .title {
@@ -106,6 +113,7 @@ const posts = (await getCollection('blog')).sort(
 							<li>
 								<a href={`/blog/${post.id}/`}>
 									<h4 class="title">{post.data.title}</h4>
+									{post.data.description && <p class="description">{post.data.description}</p>}
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
 									</p>
