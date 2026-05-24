@@ -194,7 +194,7 @@ This time, it plays almost perfectly. It guesses it in 5 attempts, which is OK, 
 
 ## So what?
 
-These examples show a pretty flawed strategy to a pretty popular game, played by the world's best availble LLM.
+These examples show a pretty flawed strategy to a pretty popular game, played by the world's best available LLM.
 I was expecting it to perform much better, and was surprised to see it score so low.
 
 So what does it mean? Why can GPT pass law school exams, medical exams, engineering interviews, etc. and not beat Wordle?
