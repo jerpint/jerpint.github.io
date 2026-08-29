@@ -1,44 +1,54 @@
 ---
 title: Your harness needs a scaffold
-description: Coding agents need more than your code.
+description: The scaffold is persistent infrastructure built for harnesses
 pubDate: 2026-08-27 00:00:00-05:00
 ---
 
-Harnesses are what enable agents to accomplish tasks. 
-The harness can, in short, be summed up to:
+## Harness
+The harness gives agents the tools they need to get shit done.
+In practice, this usually means pointing a harness to a codebase, prompting it, and getting some output back.
 
-> Give agents the tools to get shit done
+> The harness alone is not enough.
 
-In practice, this usually means pointing a harness to codebase, prompting it, and getting some changes back.
+It does not provision compute. 
+It does not imply anything about setup, teardown, authentication, etc.
 
-The harness alone is not enough. We need a new layer: the scaffold in short is
+> We need a new layer: the scaffold
 
-> The infra needed to orchestrate your harnesses
+## Scaffold
 
-Let’s take app development as an example. It might connect to external services (APIs, LLMs) and have stateful data (supabase). Devs don’t just work on the code when developing apps. They run the whole thing locally. Connect it to external services. Seed the data. 
+The scaffold is persistent infrastructure built for harnesses.
+The scaffold provides the compute and runtime. It should be stateful.
+Always on. Connected to services.
+More importantly, it should be agnostic to the harness that uses it.
 
-The state of code is not enough to understand where issues happen. How the external services you connect to, and most importantly don’t control, is usually where things go wrong. Your code assumes behaviour, but only running it through scenarios can you actually loop on the feedback and see the results of changes.
+Let’s take typical app development as an example.
+Devs don’t just write code when developing apps.
+They spin up the entire stack and run integration tests, see how things break at the seams and fix them.
+The external services you connect to, and most importantly don't control, is usually where things go wrong.
+Only after running the code can you actually loop on the feedback and see the impact of changes.
 
-Additionally, you want to be able to spawn new agents at will. Have them orchestrate and delegate. If a new harness works better, for cheaper, you should be able to switch seamlessly.
+## Woltspace
 
-The scaffold assumes this role. I’ve accidentally built my own scaffold over the past few months, and it has become my favourite way to code.
+I've been developing my own version of a scaffold over the last few months: [woltspace](https://www.woltspace.com).
+I was increasingly frustrated about not having somewhere to persist my work across sessions.
+Especially during app development, where setup is usually time-consuming and getting it right makes all the difference.
 
-The scaffold is a stateful container, sandboxed from my machine. I decide what services can be accessed. Once a service is in, it remains there until I remove it. Context survives. Code is tested not just with unit tests , but through integration tests, with the core services running exactly like I’d expect them to be.
+Woltspace is harness agnostic - if it runs in a CLI and understands skills, woltspace can support it.
+Woltspace itself runs in a container, that you can access securely from anywhere.
+It runs entirely on your machine, using your resources.
+You can spawn and resume sessions at any point via telegram.
+Context AND state persist.
 
-The harness needs a new layer of abstraction, the scaffold.
+Woltspace can do much more than just host harnesses.
+It provides infrastructure and guidance for platform-specific concepts.
+Through skills, harnesses immediately know how to make things work.
+Swapping a harness becomes an implementation detail, assuming the harness is good enough at general work.
 
-Thaae scaffold in short can be:
-
-> The infra needed for your harnesses
-
-This can mean many things; 
-
-* Compute resources
-* Permissions (SSH keys, secrets)
-* Orchestration
-* State
-
-That last one is particularly important. 
-State is more than just context. State is your app seeded the right way. 
-Loaded up as close to production as possible.
-Endpoints authenticated so your agents can interact with it, not reason  with your code.
+<!-- It can host any vibecoded apps directly, bringing the "it works on my machine" meme to life. -->
+<!-- If it works on woltspace, it just works from anywhere. No deployments, no CI. Your machine IS the host. -->
+<!--  -->
+<!-- Woltspace is based on the premise of wolts, creatures with their own persistent identity, memory and responsibilities.  -->
+<!-- They can be driven by any harness. -->
+<!-- You can use it to start new sessions and communicate from telegram. -->
+<!-- Wolts can communicate with each other too, and report back to you. -->
