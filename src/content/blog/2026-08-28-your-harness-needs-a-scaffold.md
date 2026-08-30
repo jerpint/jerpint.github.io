@@ -1,6 +1,6 @@
 ---
 title: Your harness needs a scaffold
-description: The scaffold is persistent infrastructure built for harnesses
+description: Harnesses are built around single sessions. Scaffolds give harnesses persistence.
 pubDate: 2026-08-27 00:00:00-05:00
 ---
 
