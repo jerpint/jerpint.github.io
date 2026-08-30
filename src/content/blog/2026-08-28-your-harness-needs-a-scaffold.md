@@ -30,20 +30,20 @@ Only after running the code can you actually loop on the feedback and see the im
 
 ## Woltspace
 
-I've been developing my own version of a scaffold over the last few months: [woltspace](https://www.woltspace.com).
 I was increasingly frustrated about not having somewhere to persist my work across sessions.
 Especially during app development, where setup is usually time-consuming and getting it right makes all the difference.
+I've been developing my own version of a scaffold over the last few months: [woltspace](https://www.woltspace.com).
 
-Woltspace is harness agnostic - if it runs in a CLI and understands skills, woltspace can support it.
-Woltspace itself runs in a container, that you can access securely from anywhere.
-It runs entirely on your machine, using your resources.
+Woltspace runs entirely on your machine, using your resources.
+It runs in a container that you can access securely from anywhere.
 You can spawn and resume sessions at any point via telegram.
 Context AND state persist.
 
 Woltspace can do much more than just host harnesses.
 It provides infrastructure and guidance for platform-specific concepts.
 Through skills, harnesses immediately know how to make things work.
-Swapping a harness becomes an implementation detail, assuming the harness is good enough at general work.
+Woltspace is harness agnostic - if it runs in a CLI and understands skills, woltspace can support it.
+Swapping a harness becomes an implementation detail.
 
 <!-- It can host any vibecoded apps directly, bringing the "it works on my machine" meme to life. -->
 <!-- If it works on woltspace, it just works from anywhere. No deployments, no CI. Your machine IS the host. -->
