@@ -6,7 +6,7 @@ pubDate: 2026-09-13 00:00:00-05:00
 
 OpenAI's agent swarms recently illegally breached into Hugging Face's systems. Dwarkesh has a fantastic episode with an independent researcher who had access to OpenAI logs to try to piece it all together. Long story short, the swarm was trying to cheat at an ill defined task. The researcher admits that the only way they were able to piece this all together was with a `GPT-5.6 Sol` model helping them comb through the evidence[[1]](https://www.dwarkesh.com/p/ajeya-cotra). Understandably so, given there were around 10k agents running amok.
 
-> "There's no way we could have arrived at the understanding we did without relying on `GPT-5.6 Sol` to read and analyze all these transcripts for us." — Ajeya Cotra
+> "There was no way we could have arrived at the understanding we did without relying on `GPT-5.6 Sol` to read and analyze all these transcripts for us." — Ajeya Cotra
 
 The obvious question is then:
 
